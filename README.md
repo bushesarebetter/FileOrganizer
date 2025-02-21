@@ -10,9 +10,9 @@ File organizer/disorganizer for folders, built in python and compiled through py
 ### Mac
 1. Install pyinstaller with
    ```pip3 install pyinstaller```
-2. Download the source files (You can download the full repo or just the individual .py files)
-3. You will probably have to change ```common_dir_names``` in ```organize.py```. Change the listing of .exe to .app so it can correctly identify executables on your platform
-4. Run ```pyinstaller --onefile organize.py``` for the organizer and ```pyinstaller --onefile disorganize.py``` for the disorganizer
+2. Download the source files (You can download the full repo or just the individual .py files). Please note that you may have to delete the ```.spec``` files for pyinstaller to properly compile, I'm not sure how it works on mac.
+4. You will probably have to change ```common_dir_names``` in ```organize.py```. Change the listing of .exe to .app so it can correctly identify executables on your platform
+5. Run ```pyinstaller --onefile organize.py``` for the organizer and ```pyinstaller --onefile disorganize.py``` for the disorganizer
 
 ### How it works
 After you run the .py/.exe/.whatever file, it will ask you what folder to organize/disorganize. For ```disorganize.exe```, it is highly recommended that you only use it on folders that have been organized by ```organize.exe```, as otherwise it will unpack all the files from folders and trying to reorganize with ```organize.exe``` won't work (e.g. you have specific documents for different companies, then disorganizing will take out all the documents but won't save the original folders so when you reorganize, it'll only organize into the directories you specified, such as Folders, Executables, etc"

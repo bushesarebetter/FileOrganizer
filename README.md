@@ -4,7 +4,7 @@ File organizer/disorganizer for folders, built in python and compiled through py
 ## Running organize/disorganize
 
 ### Windows
-1. Download the .exe files from the dist folder
+1. Download the .exe files from the ```dist/``` folder
 2. Now, just run like a normal .exe (Preferably through command line with ```./organize.exe``` or ```./disorganize.exe```
 
 ### Mac
@@ -22,4 +22,7 @@ After you run the .py/.exe/.whatever file, it will ask you what folder to organi
 To modify how directories are sorted in ```organize.py```, simply go over to the ```common_dir_names``` directory and add any listing you want, e.g.
 ```'.csv': 'Spreadsheets'```. 
 Then, add the directory specified (e.g. ```'Spreadsheets'```) to the ```possible_orgs``` folder (You may notice that ```'Folders'``` is also in the ```possible_orgs``` array, keep it there). 
-Finally, recompile with ```pip3 install pyinstaller```, and then ```pyinstaller --onefile organize.py``` and ```pyinstaller --onefile disorganize.py``` (if you made any changes). The executables will be outputted in the ```./dist``` folder.
+Finally, recompile with ```pip3 install pyinstaller```, and then ```pyinstaller --onefile organize.py``` and ```pyinstaller --onefile disorganize.py``` (if you made any changes). The executables will be outputted in the ```dist/``` folder.
+
+### Another note for recompiling
+```pyinstaller``` will probably make another folder called ```build```, that's fine, it just has some build info and stuff that isn't important, but the executables are still put into the ```dist/``` folder.

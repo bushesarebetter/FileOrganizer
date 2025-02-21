@@ -20,4 +20,6 @@ After you run the .py/.exe/.whatever file, it will ask you what folder to organi
 ## IMPORTANT
 
 To modify how directories are sorted in ```organize.py```, simply go over to the ```common_dir_names``` directory and add any listing you want, e.g.
-```'.csv': 'Spreadsheets'```. Then, add the directory specified (e.g. ```'Spreadsheets'```) to the ```possible_orgs``` folder (You may notice that ```'Folders'``` is also in the ```possible_orgs``` array, keep it there). Finally, recompile with ```pip3 install pyinstaller```, and then ```pyinstaller --onefile organize.py``` and ```pyinstaller --onefile disorganize.py``` (if you made any changes). The executables will be outputted in the ```./dist``` folder.
+```'.csv': 'Spreadsheets'```. 
+Then, add the directory specified (e.g. ```'Spreadsheets'```) to the ```possible_orgs``` folder (You may notice that ```'Folders'``` is also in the ```possible_orgs``` array, keep it there). 
+Finally, recompile with ```pip3 install pyinstaller```, and then ```pyinstaller --onefile organize.py``` and ```pyinstaller --onefile disorganize.py``` (if you made any changes). The executables will be outputted in the ```./dist``` folder.
